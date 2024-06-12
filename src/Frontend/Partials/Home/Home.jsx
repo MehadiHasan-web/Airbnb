@@ -1,4 +1,5 @@
 import Title from "../../../Components/Title"
+import Posts from "./Posts"
 
 const Home = () => {
     return (
@@ -6,14 +7,7 @@ const Home = () => {
             <Title title={'Airbnb'} />
 
             <div className="container mx-auto">
-                <div className="grid grid-cols-5 gap-2">
-                    <div>hi</div>
-                    <div>hi</div>
-                    <div>hi</div>
-                    <div>hi</div>
-                    <div>hi</div>
-                </div>
-
+                <Posts />
             </div>
 
         </div>
