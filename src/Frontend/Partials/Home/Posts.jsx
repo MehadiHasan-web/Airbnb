@@ -13,14 +13,15 @@ import './home.css'
 // import required modules
 import { Pagination, Navigation, HashNavigation } from 'swiper/modules';
 import axios from 'axios';
-
-
+import { Link } from 'react-router-dom';
 
 
 
 const Posts = () => {
 
     const [post, setPost] = useState([]);
+    const [activeIndex, setActiveIndex] = useState(0);
+
 
     const getPost = () => {
         axios({
@@ -38,16 +39,17 @@ const Posts = () => {
     useEffect(() => {
         getPost();
     }, []);
-    console.log(post)
+    console.log(activeIndex)
+
 
     return (
         <>
-            <div className="grid grid-cols-5 gap-6 mt-4">
+            <div className="grid  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5   gap-6 mt-4">
                 {/* item  */}
                 {
                     post.map((item, index) =>
 
-                        <div key={index} className='relative'>
+                        <Link key={index} className='relative px-2 md:px-0'>
                             {/* slider  */}
                             <Swiper
                                 spaceBetween={30}
@@ -59,22 +61,24 @@ const Posts = () => {
                                 }}
                                 navigation={true}
                                 modules={[Pagination, Navigation, HashNavigation]}
-                                className="mySwiper rounded-lg shadow"
-                                onSlideChange={() => console.log('slide change')}
+                                className="mySwiper rounded-lg shadow "
+                                onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
                                 onSwiper={(swiper) => console.log(swiper)}
+                                slidesPerView={1}
+
                             >
-                                <SwiperSlide data-hash="slide1" className='w-[320px] h-[300px] rounded-lg'>
+                                <SwiperSlide data-hash={`slide1${item.id}`} className='w-[320px] h-[300px] rounded-lg'>
                                     <img className='w-full h-full rounded-lg object-cover ' src={item.images[0]} alt="" />
                                 </SwiperSlide>
-                                <SwiperSlide data-hash="slide2" className='w-[320px] h-[300px] rounded-lg'>
+                                <SwiperSlide data-hash={`slide1${item.id}`} className='w-[320px] h-[300px] rounded-lg'>
                                     <img className='w-full h-full rounded-lg object-cover' src="../../../../public/img/post/balian2.webp" alt="" />
                                 </SwiperSlide>
-                                <SwiperSlide data-hash="slide3" className='w-[320px] h-[300px] rounded-lg'>
+                                <SwiperSlide data-hash={`slide1${item.id}`} className='w-[320px] h-[300px] rounded-lg'>
                                     <img className='w-full h-full rounded-lg object-cover' src="../../../../public/img/post/balian3.webp" alt="" />
                                 </SwiperSlide>
                             </Swiper>
                             {/* position top section  */}
-                            <div className="absolute top-0 left-0 right-0 flex justify-between px-2 pt-2 items-center">
+                            < div className="absolute top-0 left-0 right-0 flex justify-between px-2 pt-2 items-center" >
                                 <div>
                                     <button className="button-hover z-20" data-text="Awesome">
                                         <span className="actual-text">&nbsp;Gest favorite&nbsp;</span>
@@ -82,7 +86,7 @@ const Posts = () => {
                                     </button>
                                 </div>
                                 {/* loved button  */}
-                                <div className='z-20'>
+                                <div div className='z-20' >
                                     <button className="btn btn-ghost btn-sm text-white">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
@@ -90,7 +94,7 @@ const Posts = () => {
                                     </button>
 
                                 </div>
-                            </div>
+                            </div >
                             <div className='mt-2 flex justify-between '>
                                 {/* details  */}
                                 <div>
@@ -111,13 +115,16 @@ const Posts = () => {
                                 </div>
                             </div>
 
-                        </div>
+                        </Link >
 
                     )
                 }
 
 
-            </div>
+
+
+
+            </div >
 
 
 

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Master from "../Frontend/Master/Master";
 import Home from "../Frontend/Partials/Home/Home";
+import SingleProduct from "../Frontend/Partials/SinglePost/SingleProduct";
 
 const ProjectRouter = createBrowserRouter([
     {
@@ -8,10 +9,14 @@ const ProjectRouter = createBrowserRouter([
         element: <Master />,
         children: [
             {
-                path: '/',
+                path: "/",
                 element: <Home />,
+            },
+            {
+                path: "/product",
+                element: <SingleProduct />,
             }
-        ]
+        ],
     }
 ]);
 
