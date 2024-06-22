@@ -4,6 +4,10 @@ import { BsInfoSquare } from "react-icons/bs";
 import { FaBed } from "react-icons/fa";
 import { MdOutlineBathroom, MdOutlineSpeakerNotes, MdBalcony } from "react-icons/md";
 import { CiLocationArrow1 } from "react-icons/ci";
+import { IoShareOutline } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa6";
+
+
 
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
@@ -24,6 +28,28 @@ const SingleProduct = () => {
             <Title title={'Airbnb Post'} />
 
             <div className="container mx-auto mt-6 ">
+                {/* heading  */}
+                <div className="my-4 flex justify-between">
+                    <h2 className="font-bold text-2xl">Make core memories with Inside Out 2</h2>
+                    <div className="flex">
+                        <button className="btn btn-ghost btn-sm"><IoShareOutline /> Share</button>
+                        <button className="btn btn-ghost btn-sm"><FaRegHeart /> Save</button>
+                    </div>
+                </div>
+
+                {/* images  */}
+                <div>
+                    <div className="grid grid-rows-3 grid-flow-col gap-4">
+                        <div className="row-span-3 ">
+                            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4MzUyMzk5Mjc3MDU5Nw%3D%3D/original/ced15ffe-0ab5-48cf-a189-dbdeaaf04387.jpeg?im_w=960&im_q=highq" alt="" />
+                        </div>
+                        <div className="col-span-2">
+                            Lorem ipsum dolor sit.
+                        </div>
+                    </div>
+                </div>
+                {/* images end */}
+
                 <div className="grid justify-items-center">
                     {/* title and share button  */}
                     <div className=" shadow-sm border p-4 w-4/6  rounded ">
