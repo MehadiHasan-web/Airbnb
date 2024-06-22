@@ -35,9 +35,9 @@ const SingleProduct = () => {
 
             <div className="container mx-auto mt-6 ">
                 {/* heading  */}
-                <div className="hidden my-4 flex justify-between">
-                    <h2 className="font-bold text-2xl">Make core memories with Inside Out 2</h2>
-                    <div className="flex">
+                <div className="px-5 my-4 sm:flex sm:justify-between">
+                    <h2 className="font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl">Make core memories with Inside Out 2</h2>
+                    <div className="flex mt-2 sm:mt-0 items-center">
                         <button className="btn btn-ghost btn-sm"><IoShareOutline /> Share</button>
                         <button className="btn btn-ghost btn-sm"><FaRegHeart /> Save</button>
                     </div>
