@@ -39,7 +39,6 @@ const Posts = () => {
     useEffect(() => {
         getPost();
     }, []);
-    console.log(activeIndex)
 
 
     return (

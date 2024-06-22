@@ -7,22 +7,28 @@ import { CiLocationArrow1 } from "react-icons/ci";
 import { IoShareOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 
-
-
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
 // import required modules
 import { Pagination } from 'swiper/modules';
 
+const imageItem = [
+    {
+    "id": "1",
+    "image": "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630",
+    "images": ["https://st2.depositphotos.com/2001755/8564/i/450/depositphotos_85647140-stock-photo-beautiful-landscape-with-birds.jpg", "https://img.lovepik.com/photo/48015/7094.jpg_wh860.jpg","https://static.vecteezy.com/system/resources/previews/022/653/879/non_2x/fantasy-island-with-waterfalls-3d-illustration-elements-of-this-image-furnished-by-nasa-generative-ai-free-photo.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s"]
+}
+]
+
 
 const SingleProduct = () => {
+
+
+
     return (
         <>
             <Title title={'Airbnb Post'} />
@@ -39,10 +45,24 @@ const SingleProduct = () => {
 
                 {/* images  */}
                 <div>
-                    <div className="grid grid-rows-3 grid-flow-col gap-4">
-                        <div className="row-span-3 ">
-                            <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEzMTA4MzUyMzk5Mjc3MDU5Nw%3D%3D/original/ced15ffe-0ab5-48cf-a189-dbdeaaf04387.jpeg?im_w=960&im_q=highq" alt="" />
-                        </div>
+                    <div className="overflow-hidden">
+                        {
+                            imageItem.map((data,index) => <div key={index} className="overflow-hidden flex items-center gap-2 rounded-2xl">
+                            {/* image section start */}
+                            <div className="w-[60%] h-full">
+                                <img src={data.image} className="h-[392px] w-full"></img>
+                            </div>
+                            {/* image section end */}
+                            {/* images section start */}
+                            <div className="w-[40%] grid grid-cols-2 gap-2 h-full">
+                            {
+                                data.images.map((datas,index) => <img key={index} src={datas} className="w-full h-48"></img>)
+                            }
+                            </div>
+                            {/* images section end */}
+                            
+                        </div>)
+                        }
                         <div className="col-span-2">
                             Lorem ipsum dolor sit.
                         </div>
