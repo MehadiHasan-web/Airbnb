@@ -35,7 +35,7 @@ const SingleProduct = () => {
 
             <div className="container mx-auto mt-6 ">
                 {/* heading  */}
-                <div className="my-4 flex justify-between">
+                <div className="hidden my-4 flex justify-between">
                     <h2 className="font-bold text-2xl">Make core memories with Inside Out 2</h2>
                     <div className="flex">
                         <button className="btn btn-ghost btn-sm"><IoShareOutline /> Share</button>
@@ -45,18 +45,18 @@ const SingleProduct = () => {
 
                 {/* images  */}
                 <div>
-                    <div className="overflow-hidden px-5 lg:px-0">
+                    <div className="px-5 lg:px-5">
                         {
                             imageItem.map((data,index) => <div key={index} className="overflow-hidden md:flex md:justify-between md:items-center gap-2 rounded-2xl">
                             {/* image section start */}
                             <div className="w-full md:w-[60%] h-full">
-                                <img src={data.image} className="h-[392px] w-full"></img>
+                                <img src={data.image} className="h-60 sm:h-72 md:h-[330px] lg:h-[360px] xl:h-[392px] w-full"></img>
                             </div>
                             {/* image section end */}
                             {/* images section start */}
                             <div className="w-full md:w-[40%] grid grid-cols-2 gap-2 h-full mt-2 md:mt-0">
                             {
-                                data.images.map((datas,index) => <img key={index} src={datas} className="w-full h-48"></img>)
+                                data.images.map((datas,index) => <img key={index} src={datas} className="w-full h-40 sm:h-44 md:h-40 lg:h-44 xl:h-48"></img>)
                             }
                             </div>
                             {/* images section end */}

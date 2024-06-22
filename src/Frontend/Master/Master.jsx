@@ -5,7 +5,7 @@ import Navbar from "../Modules/Navbar"
 const Master = () => {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Outlet />
         </>
     )
