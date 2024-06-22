@@ -45,16 +45,16 @@ const SingleProduct = () => {
 
                 {/* images  */}
                 <div>
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden px-5 lg:px-0">
                         {
-                            imageItem.map((data,index) => <div key={index} className="overflow-hidden flex items-center gap-2 rounded-2xl">
+                            imageItem.map((data,index) => <div key={index} className="overflow-hidden md:flex md:justify-between md:items-center gap-2 rounded-2xl">
                             {/* image section start */}
-                            <div className="w-[60%] h-full">
+                            <div className="w-full md:w-[60%] h-full">
                                 <img src={data.image} className="h-[392px] w-full"></img>
                             </div>
                             {/* image section end */}
                             {/* images section start */}
-                            <div className="w-[40%] grid grid-cols-2 gap-2 h-full">
+                            <div className="w-full md:w-[40%] grid grid-cols-2 gap-2 h-full mt-2 md:mt-0">
                             {
                                 data.images.map((datas,index) => <img key={index} src={datas} className="w-full h-48"></img>)
                             }
