@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaPhone, FaEye } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const MobileNav = () => {
   const [active, setActive] = useState(1);
-
-  console.log(active)
 
   const listItems = [
     {
@@ -18,18 +16,18 @@ const MobileNav = () => {
       id:2,
       name: 'Contact',
       path: '/contact',
-      icon: <FaHome></FaHome>
+      icon: <FaPhone></FaPhone>
     },
     {
       id:3,
       name: 'Show',
       path: '/show',
-      icon: <FaHome></FaHome>
+      icon: <FaEye></FaEye>
     },
   ]
 
   return (
-    <div className="md:hidden mt-5 h-16 flex items-center justify-center w-full">
+    <div className="fixed bottom-0 z-20 md:hidden h-16 flex items-center justify-center w-full">
       {/* content section start */}
       <div className="bg-slate-200  px-4 h-full w-full">
         <ul className="flex justify-around items-center h-full w-full">
@@ -39,7 +37,7 @@ const MobileNav = () => {
             onClick={() => setActive(data.id)}
             className={`${active === data.id ? "-mt-8 duration-300" : "m-0 duration-300" }`}
           >
-            <NavLink to="/">
+            <NavLink to={data.path}>
               <div className={`${
                   active === data.id
                     ? " bg-[#37FF8B] text-black border-[6px] border-white duration-300 w-12 h-12 text-4xl" : "w-12 h-12 text-3xl text-gray-500"
