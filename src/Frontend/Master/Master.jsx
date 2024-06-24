@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom"
 import Navbar from "../Modules/Navbar"
+import MobileNav from "../../Components/MobileNav"
 
 
 const Master = () => {
@@ -7,6 +8,7 @@ const Master = () => {
         <>
             <Navbar />
             <Outlet />
+            <MobileNav></MobileNav>
         </>
     )
 }
