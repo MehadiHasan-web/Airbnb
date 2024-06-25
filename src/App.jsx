@@ -13,6 +13,7 @@ function App() {
   return (
     <>
       {auth ? <RouterProvider router={PrivateRouter} /> : <RouterProvider router={PublicRouter} />}
+
     </>
   )
 }
