@@ -109,22 +109,22 @@ function MyJobs() {
 
 
                 {/* profile  */}
-                <div className="md:flex md:justify-between gap-3 mt-2">
+                <div className="md:flex md:justify-between gap-3 md:gap-2 mt-2">
                     <div className="w-full md:w-4/12 ">
                         <div className="relative">
-                            <img className="w-full h-28 sm:h-32 xl:h-40  object-cover rounded" src="https://images.unsplash.com/photo-1556691421-cf15fe27a0b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                            <img className="w-16 h-16 sm:w-20 sm:h-20 xl:w-32 xl:h-32 rounded-full object-cover  absolute bottom-[-30px] sm:bottom-[-35px] xl:bottom-[-50px] left-2 shadow-2xl" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                            <img className="w-full h-28 sm:h-32 md:h-28 lg:h-32 xl:h-40  object-cover rounded" src="https://images.unsplash.com/photo-1556691421-cf15fe27a0b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                            <img className="w-16 h-16 sm:w-20 sm:h-20 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-32 xl:h-32 rounded-full object-cover  absolute bottom-[-30px] sm:bottom-[-35px] md:bottom-[-30px] lg:bottom-[-35px] xl:bottom-[-50px] left-2 shadow-2xl" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                         </div>
-                        <div className="mt-9 sm:mt-10 xl:mt-14 ms-2 ">
+                        <div className="mt-9 sm:mt-10 md:mt-11 xl:mt-14 ms-2 ">
                             <div className="flex justify-between mb-3">
-                                <h2 className="font-bold text-lg sm:text-[20px] xl:text-2xl">Mehadi Hasan</h2>
-                                <button className="btn btn-xs sm:btn-xs xl:btn-sm" onClick={() => document.getElementById('my_modal_3').showModal()}>Post Tolet <CiLocationArrow1 /></button>
+                                <h2 className="font-bold text-lg sm:text-[20px] md:text-base lg:text-lg xl:text-2xl">Mehadi Hasan</h2>
+                                <button className="btn btn-xs sm:btn-xs md:text-xs lg:btn-sm xl:btn-sm" onClick={() => document.getElementById('my_modal_3').showModal()}>Post Tolet <CiLocationArrow1 /></button>
                             </div>
-                            <p className="text-sm sm:text-base w-full sm:w-[75%] md:w-full">Hi, i am a person who can help your to provide service to sell your property and find out your target client</p>
-                            <div className="flex gap-6 items-center mt-1">
-                                <span className="text-slate-400 text-base sm:text-base" >@code</span>
-                                <span className="flex items-center text-slate-400 text-base sm:text-base"><CiLocationOn className="me-1" /> sun facebook</span>
-                                <div className="rating rating-xs sm:rating-sm xl:rating-sm">
+                            <p className="text-sm sm:text-base md:text-sm lg:text-base w-full sm:w-[75%] md:w-full">Hi, i am a person who can help your to provide service to sell your property and find out your target client</p>
+                            <div className="flex gap-6 md:gap-2 lg:gap-4 items-center mt-1">
+                                <span className="text-slate-400 text-base sm:text-base md:text-sm lg:text-base" >@code</span>
+                                <span className="flex items-center text-slate-400 text-base sm:text-base md:text-sm lg:text-base"><CiLocationOn className="me-1" /> sun facebook</span>
+                                <div className="rating rating-xs sm:rating-sm md:rating-xs lg:rating-sm xl:rating-sm">
                                     <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" />
                                     <input
                                         type="radio"
@@ -138,18 +138,18 @@ function MyJobs() {
 
                             <div className="grid grid-cols-2 gap-2  mt-4">
                                 {/* item 1 */}
-                                <div className="h-20 sm:h-24 xl:h-32 bg-slate-200 rounded shadow flex justify-center items-center">
+                                <div className="h-20 sm:h-24 md:h-20 lg:h-24 xl:h-32 bg-slate-200 rounded shadow flex justify-center items-center">
                                     <div className="text-center">
-                                        <h2 className="font-bold text-xl sm:text-2xl  xl:text-4xl">332</h2>
-                                        <p className="text-sm sm:text-base">Book Fee</p>
+                                        <h2 className="font-bold text-xl sm:text-2xl md:text-lg lg:text-xl  xl:text-4xl">332</h2>
+                                        <p className="text-sm sm:text-base md:text-sm lg:text-base">Book Fee</p>
                                     </div>
                                 </div>
                                 {/* item 1 */}
                                 {/* item 1 */}
-                                <div className="h-20 sm:h-24 xl:h-32 bg-slate-200 rounded shadow flex justify-center items-center">
+                                <div className="h-20 sm:h-24 md:h-20 lg:h-24 xl:h-32 bg-slate-200 rounded shadow flex justify-center items-center">
                                     <div className="text-center">
-                                        <h2 className="font-bold text-xl sm:text-2xl  xl:text-4xl">332</h2>
-                                        <p className="text-sm sm:text-base">Home Fee</p>
+                                        <h2 className="font-bold text-xl sm:text-2xl md:text-lg lg:text-xl  xl:text-4xl">332</h2>
+                                        <p className="text-sm sm:text-base md:text-sm lg:text-base">Home Fee</p>
                                     </div>
                                 </div>
                                 {/* item 1 */}
@@ -160,16 +160,16 @@ function MyJobs() {
 
 
                     {/* list tolate  */}
-                    <div className="w-full md:w-8/12 ps-2 mt-5">
+                    <div className="w-full md:w-8/12 ps-2 mt-5 md:mt-0">
 
-                        <div className="grid grid-cols-2 xl:grid-cols-4 gap-2 sm:gap-4 xl:gap-4">
+                        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4 md:gap-3 lg:gap-2 xl:gap-4">
                             {/* i1 */}
-                            <div className="p-s relative drop-shadow-md w-full h-28 sm:h-40  overflow-hidden">
+                            <div className="p-s relative drop-shadow-md w-full h-28 sm:h-40 md:h-36 lg:h-36 overflow-hidden">
                                 <img className="rounded shadow w-full h-full" src="https://plus.unsplash.com/premium_photo-1684164600683-6ecb6c9c0eb7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
                                 <div className="absolute bottom-0 left-0 right-0 flex justify-between px-2 mb-2">
-                                    <p className=" text-white font-bold text-[11px] sm:text-[13px]">Single Room</p>
-                                    <span className="flex items-center bg-green-400 text-black p-1 rounded font-semibold"> <span className="text-[10px] sm:text-xs">Approved</span> <CiCircleCheck className="text-[10px] sm:text-xs" /></span>
+                                    <p className=" text-white font-bold text-[11px] sm:text-[13px] md:text-sm lg:text-xs">Single Room</p>
+                                    <span className="flex items-center bg-green-400 text-black p-1 rounded font-semibold"> <span className="text-[10px] sm:text-xs md:text-[10px] lg:text-[9px]">Approved</span> <CiCircleCheck className="text-[10px] sm:text-xs md:text-[10px] lg:text-[9px]" /></span>
                                 </div>
                                 {/* edit  */}
                                 <div className="absolute top-0 right-0 pe-2 pt-2">
@@ -185,12 +185,12 @@ function MyJobs() {
                             </div>
                             {/* i1 */}
                             {/* i1 */}
-                            <div className="p-s relative drop-shadow-md w-full h-28 sm:h-40  overflow-hidden">
+                            <div className="p-s relative drop-shadow-md w-full h-28 sm:h-40 md:h-36 lg:h-36 overflow-hidden">
                                 <img className="rounded shadow w-full h-full" src="https://plus.unsplash.com/premium_photo-1684164600683-6ecb6c9c0eb7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
                                 <div className="absolute bottom-0 left-0 right-0 flex justify-between px-2 mb-2">
-                                    <p className=" text-white font-bold text-[11px] sm:text-[13px]">Single Room</p>
-                                    <span className="flex items-center bg-green-400 text-black p-1 rounded font-semibold"> <span className="text-[10px] sm:text-xs">Approved</span> <CiCircleCheck className="text-[10px] sm:text-xs" /></span>
+                                    <p className=" text-white font-bold text-[11px] sm:text-[13px] md:text-sm lg:text-xs">Single Room</p>
+                                    <span className="flex items-center bg-green-400 text-black p-1 rounded font-semibold"> <span className="text-[10px] sm:text-xs md:text-[10px] lg:text-[9px]">Approved</span> <CiCircleCheck className="text-[10px] sm:text-xs md:text-[10px] lg:text-[9px]" /></span>
                                 </div>
                                 {/* edit  */}
                                 <div className="absolute top-0 right-0 pe-2 pt-2">
@@ -206,12 +206,12 @@ function MyJobs() {
                             </div>
                             {/* i1 */}
                             {/* i1 */}
-                            <div className="p-s relative drop-shadow-md w-full h-28 sm:h-40  overflow-hidden">
+                            <div className="p-s relative drop-shadow-md w-full h-28 sm:h-40 md:h-36 lg:h-36 overflow-hidden">
                                 <img className="rounded shadow w-full h-full" src="https://plus.unsplash.com/premium_photo-1684164600683-6ecb6c9c0eb7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
                                 <div className="absolute bottom-0 left-0 right-0 flex justify-between px-2 mb-2">
-                                    <p className=" text-white font-bold text-[11px] sm:text-[13px]">Single Room</p>
-                                    <span className="flex items-center bg-green-400 text-black p-1 rounded font-semibold"> <span className="text-[10px] sm:text-xs">Approved</span> <CiCircleCheck className="text-[10px] sm:text-xs" /></span>
+                                    <p className=" text-white font-bold text-[11px] sm:text-[13px] md:text-sm lg:text-xs">Single Room</p>
+                                    <span className="flex items-center bg-green-400 text-black p-1 rounded font-semibold"> <span className="text-[10px] sm:text-xs md:text-[10px] lg:text-[9px]">Approved</span> <CiCircleCheck className="text-[10px] sm:text-xs md:text-[10px] lg:text-[9px]" /></span>
                                 </div>
                                 {/* edit  */}
                                 <div className="absolute top-0 right-0 pe-2 pt-2">
@@ -227,12 +227,12 @@ function MyJobs() {
                             </div>
                             {/* i1 */}
                             {/* i1 */}
-                            <div className="p-s relative drop-shadow-md w-full h-28 sm:h-40  overflow-hidden">
+                            <div className="p-s relative drop-shadow-md w-full h-28 sm:h-40 md:h-36 lg:h-36 overflow-hidden">
                                 <img className="rounded shadow w-full h-full" src="https://plus.unsplash.com/premium_photo-1684164600683-6ecb6c9c0eb7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
                                 <div className="absolute bottom-0 left-0 right-0 flex justify-between px-2 mb-2">
-                                    <p className=" text-white font-bold text-[11px] sm:text-[13px]">Single Room</p>
-                                    <span className="flex items-center bg-green-400 text-black p-1 rounded font-semibold"> <span className="text-[10px] sm:text-xs">Approved</span> <CiCircleCheck className="text-[10px] sm:text-xs" /></span>
+                                    <p className=" text-white font-bold text-[11px] sm:text-[13px] md:text-sm lg:text-xs">Single Room</p>
+                                    <span className="flex items-center bg-green-400 text-black p-1 rounded font-semibold"> <span className="text-[10px] sm:text-xs md:text-[10px] lg:text-[9px]">Approved</span> <CiCircleCheck className="text-[10px] sm:text-xs md:text-[10px] lg:text-[9px]" /></span>
                                 </div>
                                 {/* edit  */}
                                 <div className="absolute top-0 right-0 pe-2 pt-2">
@@ -247,6 +247,7 @@ function MyJobs() {
                                 </div>
                             </div>
                             {/* i1 */}
+
 
                         </div>
 
