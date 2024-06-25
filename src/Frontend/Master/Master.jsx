@@ -6,9 +6,9 @@ const Master = () => {
     return (
         <>
 
-            <Navbar />
+            {/* <Navbar /> */}
             <Outlet />
-            <MobileNav></MobileNav>
+            {/* <MobileNav></MobileNav> */}
         </>
     )
 }
