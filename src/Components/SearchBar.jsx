@@ -11,6 +11,9 @@ const SearchBar = () => {
   //     setActiveDiv(divId);
   // };
 
+  const [open, setOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+
   return (
     // <div>
     //     <div className="grid grid-cols-3 content-center xl:w-[850px] xl:h-[60px]   rounded-full bg-slate-200 shadow border-[1px] border-slate-300 ">
@@ -89,10 +92,11 @@ const SearchBar = () => {
     //     </div>
 
     // </div >
-    <div className="w-full">
-      <div className="bg-[#f5f5f5] w-full rounded-full">
+    <div className="overflow-hidden">
+    <div className="w-full overflow-hidden">
+      <div className="bg-slate-200 w-full rounded-full ">
         <ul className="flex items-center">
-          <li className="relative">
+          <li className="relative" onClick={() => {setOpen(!open)}}>
             <input
               type="text"
               placeholder="search destination"
@@ -122,7 +126,7 @@ const SearchBar = () => {
               <option>Feni</option>
             </select>
           </li>
-          <li className="relative">
+          <li className="relative" onClick={() => {setSearchOpen(!searchOpen)}}>
             <input
               type="text"
               placeholder="search destination"
@@ -138,7 +142,21 @@ const SearchBar = () => {
           </li>
         </ul>
       </div>
+
     </div>
+    {/* open section start */}
+    <span className={` ${open ? 'fixed' : 'hidden'} bg-white rounded-lg overflow-hidden z-50 xl:w-1/2 mt-2 shadow-lg xl:p-5 duration-500`}>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae ipsum adipisci voluptates consequatur ipsa assumenda iste ratione impedit culpa!</p>
+    </span>
+    {/* open section end */}
+    {/* searchOpen section start */}
+    <span className={` ${searchOpen ? 'fixed' : 'hidden'} bg-white rounded-lg overflow-hidden z-50 xl:w-1/2 mt-2 shadow-lg xl:p-5 duration-500`}>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae ipsum adipisci voluptates consequatur ipsa assumenda iste ratione impedit culpa!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae ipsum adipisci voluptates consequatur ipsa assumenda iste ratione impedit culpa!</p>
+    </span>
+    {/* searchOpen section end */}
+    </div>
+    
   );
 };
 
