@@ -228,8 +228,6 @@ function MyJobs() {
                             {/* i1 */}
                         </div>
 
-
-
                     </div>
                 </div>
 
