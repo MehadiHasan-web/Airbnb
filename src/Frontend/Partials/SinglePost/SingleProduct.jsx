@@ -18,10 +18,10 @@ import { Pagination } from 'swiper/modules';
 
 const imageItem = [
     {
-    "id": "1",
-    "image": "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630",
-    "images": ["https://st2.depositphotos.com/2001755/8564/i/450/depositphotos_85647140-stock-photo-beautiful-landscape-with-birds.jpg", "https://img.lovepik.com/photo/48015/7094.jpg_wh860.jpg","https://static.vecteezy.com/system/resources/previews/022/653/879/non_2x/fantasy-island-with-waterfalls-3d-illustration-elements-of-this-image-furnished-by-nasa-generative-ai-free-photo.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s"]
-}
+        "id": "1",
+        "image": "https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630",
+        "images": ["https://st2.depositphotos.com/2001755/8564/i/450/depositphotos_85647140-stock-photo-beautiful-landscape-with-birds.jpg", "https://img.lovepik.com/photo/48015/7094.jpg_wh860.jpg", "https://static.vecteezy.com/system/resources/previews/022/653/879/non_2x/fantasy-island-with-waterfalls-3d-illustration-elements-of-this-image-furnished-by-nasa-generative-ai-free-photo.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FWF2judaujT30K9sMf-tZFhMWpgP6xCemw&s"]
+    }
 ]
 
 
@@ -35,49 +35,45 @@ const SingleProduct = () => {
 
             <div className="container mx-auto mt-6 ">
                 {/* heading  */}
-                <div className="px-5 my-4 sm:flex sm:justify-between">
-                    <h2 className="font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl">Make core memories with Inside Out 2</h2>
-                    <div className="flex mt-2 sm:mt-0 items-center">
-                        <button className="btn btn-ghost btn-sm"><IoShareOutline /> Share</button>
-                        <button className="btn btn-ghost btn-sm"><FaRegHeart /> Save</button>
+                <div className="grid justify-items-center  p-4 lg:p-0">
+                    <div className=" my-4 sm:flex sm:justify-between  w-full xl:w-4/6 shadow-sm border p-4  rounded ">
+                        <h2 className="font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl ">Make core memories with Inside Out 2</h2>
+                        <div className="flex mt-2 sm:mt-0 items-center">
+                            <button className="btn btn-ghost btn-sm"><IoShareOutline /> Share</button>
+                            <button className="btn btn-ghost btn-sm"><FaRegHeart /> Save</button>
+                        </div>
                     </div>
                 </div>
 
                 {/* images  */}
-                <div>
-                    <div className="px-5 lg:px-5">
+                <div className="grid justify-items-center p-4 lg:p-0">
+                    <div className=" hidden md:block w-full xl:w-4/6 mb-6">
                         {
-                            imageItem.map((data,index) => <div key={index} className="overflow-hidden md:flex md:justify-between md:items-center gap-2 rounded-2xl">
-                            {/* image section start */}
-                            <div className="w-full md:w-[60%] h-full">
-                                <img src={data.image} className="h-60 sm:h-72 md:h-[330px] lg:h-[360px] xl:h-[392px] w-full"></img>
-                            </div>
-                            {/* image section end */}
-                            {/* images section start */}
-                            <div className="w-full md:w-[40%] grid grid-cols-2 gap-2 h-full mt-2 md:mt-0">
-                            {
-                                data.images.map((datas,index) => <img key={index} src={datas} className="w-full h-40 sm:h-44 md:h-40 lg:h-44 xl:h-48"></img>)
-                            }
-                            </div>
-                            {/* images section end */}
-                            
-                        </div>)
+                            imageItem.map((data, index) => <div key={index} className="overflow-hidden md:flex md:justify-between md:items-center gap-2 rounded-2xl">
+                                {/* image section start */}
+                                <div className="w-full md:w-[60%] h-full">
+                                    <img src={data.image} className="h-60 sm:h-72 md:h-[330px] lg:h-[360px] xl:h-[392px] w-full"></img>
+                                </div>
+                                {/* image section end */}
+                                {/* images section start */}
+                                <div className="w-full md:w-[40%] grid grid-cols-2 gap-2 h-full mt-2 md:mt-0">
+                                    {
+                                        data.images.map((datas, index) => <img key={index} src={datas} className="w-full h-40 sm:h-44 md:h-40 lg:h-44 xl:h-48"></img>)
+                                    }
+                                </div>
+                                {/* images section end */}
+
+                            </div>)
                         }
-                        <div className="col-span-2">
-                            Lorem ipsum dolor sit.
-                        </div>
+
                     </div>
                 </div>
                 {/* images end */}
 
-                <div className="grid justify-items-center">
-                    {/* title and share button  */}
-                    <div className=" shadow-sm border p-4 w-4/6  rounded ">
-                        <h2 className="font-bold text-md  text-slate-500">Artist's House & Gallery • British Colonial Suite Lorem ipsum dolor sit.</h2>
-                    </div>
+                <div className="grid justify-items-center  p-4 lg:p-0">
 
                     {/* slider  */}
-                    <div className=" shadow-sm border w-4/6  rounded mt-4">
+                    <div className=" shadow-sm border w-full xl:w-4/6  rounded mt-4 block md:hidden ">
                         <div className="border-b pb-4 p-4 flex items-center">
                             <PiImagesThin className="me-2 font-bold" /> <strong>Image</strong>
                         </div>
@@ -111,7 +107,7 @@ const SingleProduct = () => {
                     </div>
 
                     {/* basic information  */}
-                    <div className=" shadow-sm border w-4/6  rounded mt-4">
+                    <div className=" shadow-sm border w-full xl:w-4/6  rounded mt-4 ">
                         <div className="border-b pb-4 p-4 flex items-center">
                             <BsInfoSquare className="me-2 font-bold" /> <strong>Basic information</strong>
                         </div>
@@ -165,7 +161,7 @@ const SingleProduct = () => {
                     </div>
 
                     {/* Location information */}
-                    <div className=" shadow-sm border w-4/6  rounded mt-4">
+                    <div className=" shadow-sm border w-full xl:w-4/6  rounded mt-4">
                         <div className="border-b pb-4 p-4 flex items-center">
                             <CiLocationArrow1 className="me-2 font-bold" /> <strong>Location information</strong>
                         </div>
@@ -196,7 +192,7 @@ const SingleProduct = () => {
                         </div>
                     </div>
                     {/* Summary*/}
-                    <div className=" shadow-sm border w-4/6  rounded mt-4">
+                    <div className=" shadow-sm border w-full xl:w-4/6  rounded mt-4 mb-24">
                         <div className="border-b pb-4 p-4 flex items-center">
                             <MdOutlineSpeakerNotes className="me-2 font-bold" /> <strong>Summary</strong>
                         </div>

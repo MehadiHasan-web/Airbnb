@@ -5,7 +5,7 @@ import { CiCircleCheck } from "react-icons/ci";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { CiMenuKebab } from "react-icons/ci";
 import Swal from 'sweetalert2'
-
+import Title from "../../../Components/Title";
 
 
 function MyJobs() {
@@ -59,6 +59,7 @@ function MyJobs() {
     return (
         <>
             <div className="container mx-auto pt-4">
+                <Title title={'My Jobs'} />
                 {/* post model */}
                 <dialog id="my_modal_3" className="modal">
                     <div className="modal-box">
