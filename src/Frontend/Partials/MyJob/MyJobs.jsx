@@ -45,8 +45,6 @@ const card = [
     }
 ]
 
-
-
 function MyJobs() {
     const [file, setFile] = useState();
     const fileInputRef = useRef(null);
