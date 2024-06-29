@@ -11,7 +11,6 @@ const SearchBar = () => {
   //     setActiveDiv(divId);
   // };
 
-  const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
@@ -96,24 +95,14 @@ const SearchBar = () => {
     <div className="w-full overflow-hidden">
       <div className="bg-slate-200 w-full rounded-full ">
         <ul className="flex items-center">
-          <li className="relative" onClick={() => {setOpen(!open)}}>
-            <input
-              type="text"
-              placeholder="search destination"
-              className="input input-bordered focus:outline-none  input-lg w-full rounded-full text-sm"
-            />
-            <h3 className="text-black absolute top-1 left-7 text-[13px]">
-              Where
-            </h3>
-          </li>
           <li>
-            <select className="select select-bordered w-36 h-[60px] rounded-full px-3 focus:outline-none">
+            <select className="select select-bordered w-36 h-[60px] rounded-full px-3 focus:outline-none font-bold text-base">
             <option disabled selected>City</option>
             <option>Chittagong</option>
-              <option>Dhaka</option>
-              <option>Cumilla</option>
-              <option>Chandpur</option>
-              <option>Feni</option>
+            <option>Dhaka</option>
+            <option>Cumilla</option>
+            <option>Chandpur</option>
+            <option>Feni</option>
             </select>
           </li>
           <li>
@@ -142,13 +131,7 @@ const SearchBar = () => {
           </li>
         </ul>
       </div>
-
     </div>
-    {/* open section start */}
-    <span className={` ${open ? 'fixed' : 'hidden'} bg-white rounded-lg overflow-hidden z-50 xl:w-1/2 mt-2 shadow-lg xl:p-5 duration-500`}>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae ipsum adipisci voluptates consequatur ipsa assumenda iste ratione impedit culpa!</p>
-    </span>
-    {/* open section end */}
     {/* searchOpen section start */}
     <span className={` ${searchOpen ? 'fixed' : 'hidden'} bg-white rounded-lg overflow-hidden z-50 xl:w-1/2 mt-2 shadow-lg xl:p-5 duration-500`}>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae ipsum adipisci voluptates consequatur ipsa assumenda iste ratione impedit culpa!</p>
