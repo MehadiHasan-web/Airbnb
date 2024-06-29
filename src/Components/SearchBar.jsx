@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../assets/search.css";
 import { FaSearch } from "react-icons/fa";
-import Example from "./Example.jsx";
 
 
 const SearchBar = () => {
@@ -98,17 +97,26 @@ const SearchBar = () => {
     <div className="w-full overflow-hidden">
       <div className="bg-slate-200 w-full rounded-full ">
         <ul className="flex items-center">
-          <li>
-          <Example></Example>
-          </li>
+          
           <li>
             <select className="select select-bordered w-40 h-[60px] rounded-full px-3 focus:outline-none font-bold text-base">
-            <option disabled selected>Country</option>
+            <option disabled selected>City</option>
             <option>Chittagong</option>
             <option>Dhaka</option>
             <option>Cumilla</option>
             <option>Chandpur</option>
             <option>Feni</option>
+            </select>
+          </li>
+          <li>
+            <select className="select select-bordered w-40 h-[60px] rounded-full px-3 focus:outline-none font-bold text-base">
+            <option disabled selected>Country</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>UAE</option>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>China</option>
             </select>
           </li>
           <li className="relative" onClick={() => {setSearchOpen(!searchOpen)}}>
