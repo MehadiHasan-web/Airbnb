@@ -15,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
+import SocialModal from "./SocialModal";
 
 const imageItem = [
     {
@@ -28,10 +29,10 @@ const imageItem = [
 const SingleProduct = () => {
 
 
-
     return (
         <>
             <Title title={'Airbnb Post'} />
+            <SocialModal></SocialModal>
 
             <div className="container mx-auto mt-6 ">
                 {/* heading  */}
@@ -39,7 +40,7 @@ const SingleProduct = () => {
                     <div className=" my-4 sm:flex sm:justify-between  w-full xl:w-4/6 shadow-sm border p-4  rounded ">
                         <h2 className="font-bold text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl ">Make core memories with Inside Out 2</h2>
                         <div className="flex mt-2 sm:mt-0 items-center">
-                            <button className="btn btn-ghost btn-sm"><IoShareOutline /> Share</button>
+                            <button className="btn btn-ghost btn-sm" onClick={()=>document.getElementById('my_modal_3').showModal()}><IoShareOutline /> Share</button>
                             <button className="btn btn-ghost btn-sm"><FaRegHeart /> Save</button>
                         </div>
                     </div>
@@ -219,6 +220,7 @@ const SingleProduct = () => {
 
 
             </div>
+            
 
 
         </>
