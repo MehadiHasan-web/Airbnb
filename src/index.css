@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* button size modified section start */
 .btn-xx {
   height: 18px;
   min-height: 18px;
@@ -17,3 +17,4 @@
   padding-right: 6px;
   font-size: 9px ;
 }
+/* button size modified section end */

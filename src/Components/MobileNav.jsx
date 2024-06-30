@@ -40,7 +40,7 @@ const MobileNav = () => {
               <NavLink to={data.path}>
                 <div className={`${active === data.id
                   ? " bg-[#37FF8B] text-black border-[6px] border-white duration-300 w-12 h-12 text-4xl" : "w-12 h-12 text-3xl text-gray-500"
-                  } flex justify-center items-center rounded-full p-1 mx-auto`}>
+                  } flex justify-center items-center rounded-full p-1 mx-auto iconBtn`}>
                   {data.icon}
                 </div>
                 <p
