@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import SearchBar from "../../Components/SearchBar";
-import { BsHouseAdd } from "react-icons/bs";
+import AddProperty from "../../Components/AddProperty";
 
 
 
@@ -194,21 +194,12 @@ const Navbar = () => {
                         </svg>
                     </Link>
                 </div>
-                {/* search section  */}
+                {/* search   */}
                 <div>
                     <SearchBar />
                 </div>
                 <div>
-                    {/* end section */}
-                    <div className="join">
-                        <Link to={'/myjobs'} className="btn join-item btn-outline font-bold">
-                            <BsHouseAdd className="text-2xl" /> Add Property
-                        </Link>
-                        <button className="btn join-item btn-outline">Button</button>
-                        <button className="btn join-item btn-outline">Button</button>
-                    </div>
-
-
+                    <AddProperty />
                 </div>
             </div>
         </div>
