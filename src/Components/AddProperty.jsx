@@ -78,11 +78,11 @@ const AddProperty = () => {
         <>
             {/* property section */}
             <div className="join">
-                <button className="btn join-item btn-outline font-bold" onClick={() => document.getElementById('my_modal_3').showModal()}>
-                    <BsHouseAdd className="text-2xl" /> Add Property
+                <button className="btn btn-xx sm:btn-sm md:btn-x1 lg:btn-sm join-item btn-outline font-bold" onClick={() => document.getElementById('my_modal_3').showModal()}>
+                    <BsHouseAdd className="text-xs sm:text-base xl:text-2xl" /> Add Property
                 </button>
-                <button className="btn join-item btn-outline">Button</button>
-                <button className="btn join-item btn-outline">Button</button>
+                <button className="btn btn-xx sm:btn-sm md:btn-x1 lg:btn-sm join-item btn-outline ">Button</button>
+                <button className="btn btn-xx sm:btn-sm md:btn-x1 lg:btn-sm join-item btn-outline">Button</button>
             </div>
 
             {/* add property modal  */}
@@ -95,9 +95,6 @@ const AddProperty = () => {
                     <h3 className="font-bold text-lg">Upload Toelate</h3>
 
                     <form onSubmit={submitFunction}>
-
-
-
                         {/* multiple image upload start   */}
                         <div className="bg-white rounded w-12/12 mx-auto my-2">
                             <div className="relative flex flex-col p-4 text-gray-400 border border-gray-200 rounded">
