@@ -12,7 +12,6 @@ const Master = () => {
             <Outlet />
             <MobileNav></MobileNav>
             <div className="fixed top-0  right-0 h-screen content-center">
-
                 <div className="flex flex-col justify-center space-x-4 mb-8 gap-1">
                     <FacebookShareButton
                         url="https://yourwebsite.com"
@@ -41,8 +40,6 @@ const Master = () => {
                         </button>
                     </EmailShareButton>
                 </div>
-
-
             </div>
         </div>
     )
