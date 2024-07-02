@@ -78,7 +78,10 @@ const AddProperty = () => {
         <>
             {/* property section */}
             <div className="join">
-                <button className="btn btn-xx sm:btn-sm md:btn-x1 lg:btn-sm join-item btn-outline font-bold" onClick={() => document.getElementById('my_modal_3').showModal()}>
+                {/* <button className="btn btn-xx sm:btn-sm md:btn-xs lg:btn-sm join-item btn-outline font-bold" onClick={() => document.getElementById('my_modal_3').showModal()}>
+                    <BsHouseAdd className="text-xs sm:text-base xl:text-2xl" /> Add Property
+                </button> */}
+                <button className="btn btn-sm join-item btn-outline font-bold" onClick={() => document.getElementById('my_modal_3').showModal()}>
                     <BsHouseAdd className="text-xs sm:text-base xl:text-2xl" /> Add Property
                 </button>
                 <button className="btn btn-xx sm:btn-sm md:btn-x1 lg:btn-sm join-item btn-outline ">Button</button>
